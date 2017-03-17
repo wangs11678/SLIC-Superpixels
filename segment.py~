@@ -1,0 +1,5 @@
+import ctypes
+import cv2
+dll=ctypes.cdll.LoadLibrary
+lib=dll("./libsegment.so") #in windows use dll
+lib.segment("lena.jpg")
